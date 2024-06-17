@@ -1,0 +1,105 @@
+.proyectsModal {
+    position: fixed; /* Fija el modal en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(167, 255, 59);
+    z-index: 1000; /* Asegúrate de que el modal esté en frente */
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Orbitron";
+}
+
+.containerSection {
+    font-family: "Orbitron";
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-height: 80vh; /* Limita la altura del contenedor y permite desplazamiento interno */
+    overflow-y: auto; /* Permite el desplazamiento vertical si es necesario */
+    color: rgb(115, 39, 247);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.projectCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectCard img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(35, 35, 34);
+    font-size: 15px;
+}
+
+.closeButton {
+    font-family: "Orbitron";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: dimgrey;
+}
+
+.closeButton:hover {
+    color: rgb(253, 90, 90);
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+}
+.closeButton:active {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.image {
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+}
+.image:active {
+    transform: scale(7);
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 30px;
+}
+
+.containerPro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(26, 26, 26);
+}

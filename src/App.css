@@ -1,12 +1,11 @@
-@foont-face {
-  font-family: "Orbitron";
-  src: url("./Assets/fonts/Orbitron.ttf");
-}
+
 .App {
+  margin: none;
+  padding: none;
   text-align: center;
-  background-color: #000000;
-  height: 100vh;
-  width: 100vw;
+  background: linear-gradient(45deg, #050505, #212121);
+  background-size: cover;
+  border: none;
 }
 
 .App-logo {
@@ -22,7 +21,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
