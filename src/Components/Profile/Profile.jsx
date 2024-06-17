@@ -18,8 +18,11 @@ const Profile = () => {
     }
     return (
         <div className={style.profile}>
-            <button className={style.button} onClick={handleClick}>
-                <h1>{isHovered ? 'CLICK ME' : 'Guillermo Fernandez'}</h1>
+            <button className={style.button}
+                onClick={handleClick}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}>
+                <h1>{isHovered ? 'Click Me for more!!!' : 'Guillermo Fernandez'}</h1>
             </button>
             <ModalDesc show={isModalVisible} closed={() => setIsModalVisible(false)} />
             <img src={imageP} alt="Foto de perfil" />
