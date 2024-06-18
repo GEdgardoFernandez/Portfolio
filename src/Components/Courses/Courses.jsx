@@ -4,6 +4,7 @@ import cert2 from "..//..//Assets/img/cert/certificado02.jpg";
 import cert3 from "..//..//Assets/img/cert/certificado03.png";
 import cert4 from "..//..//Assets/img/cert/certificado04.jpg";
 import cert5 from "..//..//Assets/img/cert/certificado05.jpg";
+import { IoMdCloseCircle } from "react-icons/io";
 import { useState } from "react";
 
 const Courses = ({ show, onClose }) => {
@@ -29,7 +30,7 @@ const Courses = ({ show, onClose }) => {
                     />
                 ))}
             </div>
-            <button onClick={onClose} className={style.closeButton}>X</button>
+            <button onClick={onClose} className={style.closeButton}><IoMdCloseCircle size={40} /></button>
         </div>
     );
 };

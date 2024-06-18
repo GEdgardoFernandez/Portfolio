@@ -2,6 +2,7 @@ import style from "./Proyects.module.css";
 import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { IoMdCloseCircle} from "react-icons/io";
 import image from "..//..//Assets/img/capProyects/appgame1.png";
 import image2 from "..//..//Assets/img/capProyects/appgame2.png";
 import rick from "..//..//Assets/img/capProyects/rickandomorty.png";
@@ -82,7 +83,7 @@ const Proyects = ({ show, onClose }) => {
                     <a href="https://github.com/GEdgardoFernandez/GameAhorcado" target="_blank">Ver más...</a>
                 </div>
             </div>
-            <button onClick={onClose} className={style.closeButton}>X</button>
+            <button onClick={onClose} className={style.closeButton}><IoMdCloseCircle size={40} /></button>
         </div>
     )
 }

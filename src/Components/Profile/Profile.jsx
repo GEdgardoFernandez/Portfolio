@@ -1,7 +1,7 @@
 import style from "./Profile.module.css";
 import imageP from "..//..//Assets/img/Perfil.png"
-import ModalDesc from "../ModalDesc/ModalDesc";
 import { useState } from "react";
+import CardInfo from "../CardInfo/Cardinfo";
 const Profile = () => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -22,12 +22,14 @@ const Profile = () => {
                 onClick={handleClick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
-                <h1>{isHovered ? 'Click Me for more!!!' : 'Guillermo Fernandez'}</h1>
+                <h1>{isHovered ? 'Click Me for more!!!' : 'Hello!!'}</h1>
             </button>
-            <ModalDesc show={isModalVisible} closed={() => setIsModalVisible(false)} />
+
             <img src={imageP} alt="Foto de perfil" />
             <h4>Full Stack Developer</h4>
+            <CardInfo show={isModalVisible} closed={() => setIsModalVisible(false)} />
         </div>
+        
     );
 };
 
