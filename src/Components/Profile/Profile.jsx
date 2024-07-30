@@ -22,10 +22,11 @@ const Profile = () => {
                 onClick={handleClick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
-                <h1>{isHovered ? 'Click Me for more!!!' : 'Hello!!'}</h1>
+                <h1>{isHovered ? 'Saber más' : 'Hola'}</h1>
             </button>
 
             <img src={imageP} alt="Foto de perfil" />
+            <h1>Guillermo Fernandez</h1>
             <h4>Full Stack Developer</h4>
             <CardInfo show={isModalVisible} closed={() => setIsModalVisible(false)} />
         </div>

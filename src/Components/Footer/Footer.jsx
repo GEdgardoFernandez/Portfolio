@@ -15,7 +15,7 @@ export default function Footer() {
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/GEdgardoFernandez?tab=repositories" target="_blank">
+                    <a href="https://github.com/GEdgardoFernandez" target="_blank">
                         <FaGithub size="1.5em" color="lime" />
                     </a>
                 </li>
