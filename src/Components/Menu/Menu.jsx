@@ -4,7 +4,9 @@ import { GiAnvilImpact, GiBiceps, GiDiploma, GiMedievalGate } from "react-icons/
 import Proyects from "../ProyectsModal/Proyects";
 import Courses from "../Courses/Courses";
 import Skills from "../Skills/Skills";
+import { useNavigate } from "react-router-dom";
 const Menu = () => {
+    const navigate = useNavigate();
     const [activeModal, setActiveModal] = useState(null); // Estado único para manejar qué modal está activo
 
     const closeModal = () => setActiveModal(null); // Función para cerrar modales
@@ -12,7 +14,7 @@ const Menu = () => {
         <div className={style.container}>
             <div>
                 <ul className={style.wrapper}>
-                    <li className={`${style.icon} ${style.black}`} onClick={() => setActiveModal('projects')}>
+                    <li className={`${style.icon} ${style.black}`} onClick={() => navigate('/projects')}>
                         <span className={style.tooltip}>Projects</span>
                         <span><GiAnvilImpact size={30} /></span>
                     </li>
@@ -26,8 +28,6 @@ const Menu = () => {
                     </li>
                 </ul>
             </div>
-
-            <Proyects show={activeModal === 'projects'} onClose={closeModal} />
             <Courses show={activeModal === 'courses'} onClose={closeModal} />
             <Skills show={activeModal === 'skills'} onClose={closeModal} />
         </div>
