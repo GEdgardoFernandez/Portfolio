@@ -1,11 +1,10 @@
-
+import Loading from "../Components/Loading/Loading"
 
 const Landing = () => {
     return (
         <div>
-            <h1>Hello</h1>
+            <Loading />
         </div>
     )
 }
-
 export default Landing
