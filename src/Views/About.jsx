@@ -1,12 +1,12 @@
+import About from "../Components/About/About";
 
-
-const About = () => {
+const AboutView = () => {
 
     return (
         <div>
-            About
+            <About />
         </div>
     )
 }
 
-export default About;
+export default AboutView;

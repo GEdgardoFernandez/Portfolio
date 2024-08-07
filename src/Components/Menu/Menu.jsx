@@ -18,7 +18,7 @@ const Menu = () => {
                         <span className={style.tooltip}>Projects</span>
                         <span><GiAnvilImpact size={30} /></span>
                     </li>
-                    <li className={`${style.icon} ${style.black}`} onClick={() => setActiveModal('skills')}>
+                    <li className={`${style.icon} ${style.black}`} onClick={() => navigate('/about')}>
                         <span className={style.tooltip}>Skills</span>
                         <span><GiBiceps size={30} /></span>
                     </li>
