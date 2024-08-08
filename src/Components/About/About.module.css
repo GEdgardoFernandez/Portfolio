@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 80%;
+}
+.title {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px #f9ed03, -5px -5px 10px #f9ed03;
+}
+.text, .title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff,
+}
+.tenue {
+    color: #2c2121;
+    text-shadow: 0 0 2px #2c21219a,
+                 0 0 4px #2b282872,
+                 0 0 6px #400e406b,
+                 0 0 8px #1a081a64;
+}
+
+.encendido {
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px #00e5ff83,
+                 0 0 30px #0077ff84,
+                 0 0 40px #00d9ff83,
+                 0 0 50px #00aeff82,
+                 0 0 60px #00ccff6e;
+}
+.button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 16px;
+    font-size: 20px;
+    color: rgb(29, 238, 22);
+    background: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 20px #ff00ff,
+                 0 0 30px #ff00ff,
+                 0 0 40px #ff00ff,
+                 0 0 50px #ff00ff,
+                 0 0 60px #ff00ff;
+    animation: neon-effect 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-effect {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #ff00ff,
+                     0 0 40px #ff00ff,
+                     0 0 50px #ff00ff,
+                     0 0 60px #ff00ff,
+                     0 0 70px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 2px #fff,
+                     0 0 4px #fff,
+                     0 0 6px #ff00ff,
+                     0 0 8px #ff00ff,
+                     0 0 10px #ff00ff,
+                     0 0 12px #ff00ff,
+                     0 0 14px #ff00ff;
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #121111;
+    text-shadow: 0 0 50px rgba(66, 240, 116, 0.3), 0 0 20px rgba(77, 74, 74, 0.3), 0 0 15px rgba(49, 48, 48, 0.3);
+}
+.containerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+/*Switch*/
+
+.check {
+    display: block;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+  }
+  
+  .check {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+    color: #fdea7b;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .check:before, .check:after {
+    content: "";
+    display: block;
+  }
+  
+  .check:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+  }
+  
+  .check:after {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+    box-sizing: border-box;
+  }
+  /* Checked */
+  .check:checked {
+    background-color: rgba(0,0,0,0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+  }
+  
+  .check:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%)
+  }
+  
+  .check:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+  }
+  /* Other States */
+  .check:focus {
+      /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
+  }
