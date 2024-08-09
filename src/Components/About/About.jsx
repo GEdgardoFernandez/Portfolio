@@ -13,16 +13,12 @@ const About = () => {
     return (
         <div className={styles.container}>
             <div className={styles.about}>
-                <span className={styles.title}>Encender</span>
+                <span className={styles.title}>Sobre mi</span>
                 <input type="checkbox" className={styles.check} onClick={handleClick}/>
                 <p className={`${styles.text} ${isOn ? styles.encendido : styles.tenue}`}>{fullText}</p>
             </div>
-            <div>
-                <button onClick={() => navigate('/home')} className={styles.button}>Volver</button>
-            </div>
             <div className={styles.containerButtons}>
                 <button onClick={() => setActiveModal('courses')} className={styles.button}>Certificados</button>
-
                 <Courses show={activeModal === 'courses'} onClose={closeModal} />
             </div>
         </div>

@@ -21,11 +21,12 @@
 }
 .text, .title {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     text-shadow: 0 0 5px #fff,
 }
 .tenue {
+    display: none;
     color: #2c2121;
     text-shadow: 0 0 2px #2c21219a,
                  0 0 4px #2b282872,

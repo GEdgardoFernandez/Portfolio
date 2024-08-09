@@ -1,9 +1,15 @@
-
-.App {
+@font-face {
+  font-family: Orbitron;
+  src: url('..//src/Assets/fonts/Orbitron.ttf');
+}
+.App, body {
+  background-color: #212121;
+  background-size: cover;
+  font-family: Orbitron;
+  color : rgb(0, 0, 0);
   margin: none;
   padding: none;
   text-align: center;
-  background: linear-gradient(45deg, #050505, #212121);
   background-size: cover;
   border: none;
 }

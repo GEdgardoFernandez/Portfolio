@@ -11,12 +11,12 @@ export default function Footer() {
             <ul className={footerStyles.contact}>
                 <li>
                     <a href="https://www.linkedin.com/in/guillermo-fern%C3%A1ndez-703b50267/" target="_blank">
-                        <FaLinkedin size="1.5em" color="cyan" />
+                        <FaLinkedin size="1.5em" color="cyan" className={footerStyles.icon} />
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/GEdgardoFernandez" target="_blank">
-                        <FaGithub size="1.5em" color="lime" />
+                    <a href="https://github.com/GEdgardoFernandez" target="_blank" >
+                        <FaGithub size="1.5em" color="lime" className={footerStyles.icon}/>
                     </a>
                 </li>
             </ul>

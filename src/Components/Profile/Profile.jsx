@@ -15,11 +15,6 @@ const Profile = () => {
                 <h1>Guillermo Fernandez</h1>
                 <h4>Full Stack Developer</h4>
             </div>
-            <div className={style.par}>
-                <button onClick={() => navigate("/about")} className={style.toggleButton}>
-                    Saber mas...
-                </button>
-            </div>
         </div>
     );
 };
