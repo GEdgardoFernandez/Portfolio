@@ -4,6 +4,7 @@ import cert2 from "..//..//Assets/img/cert/certificado02.jpg";
 import cert3 from "..//..//Assets/img/cert/certificado03.png";
 import cert4 from "..//..//Assets/img/cert/certificado04.jpg";
 import cert5 from "..//..//Assets/img/cert/certificado05.jpg";
+import cert6 from "..//..//Assets/img/cert/certificado06.png";
 import { IoMdCloseCircle } from "react-icons/io";
 import { useState } from "react";
 
@@ -20,7 +21,7 @@ const Courses = ({ show, onClose }) => {
         <div className={style.container}>
             <h1>Courses</h1>
             <div className={style.containerImg}>
-                {[cert, cert2, cert3, cert4, cert5].map((src, index) => (
+                {[cert, cert2, cert3, cert4, cert5, cert6].map((src, index) => (
                     <img
                         key={index}
                         src={src}

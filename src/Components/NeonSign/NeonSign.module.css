@@ -1,0 +1,15 @@
+.neonSign {
+    font-size: 40px;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+.neonSign.active {
+    color: #f4ce28; /* Color del neón cuando está activo */
+    text-shadow: 
+        0 0 5px #f4ce28,
+        0 0 10px #f4ce28,
+        0 0 15px #f4ce28,
+        0 0 20px #f4ce28,
+        0 0 25px #f4ce28;
+}

@@ -3,24 +3,19 @@
     src: url("..//..//Assets/fonts/Orbitron.ttf");
 }
 .container {
-    font-family: "Orbitron";
-    font-weight: bold;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-color: #212121;
 }
 .profile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    width: 100%;
+    z-index: 1; /* Asegura que el perfil esté por encima de los carteles */
 }
 .profile>h1 {
     color: #fff;
@@ -46,6 +41,8 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    z-index: 2;
+    text-align: center;
 }
 
 .profile>img:hover {
@@ -102,4 +99,17 @@
 
 .toggleButton:hover {
     background-color: #0056b3;
+}
+
+
+.neonBackground {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajusta el número de columnas según sea necesario */    /* Ajusta el número de filas según sea necesario */
+    gap: 20px; /* Espacio entre los carteles */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Para que los carteles queden detrás de la información de perfil */
 }
