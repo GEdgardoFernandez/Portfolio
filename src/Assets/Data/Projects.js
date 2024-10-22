@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: 'GameAppeando (PI-Henry)',
-    description: 'Proyecto individual que nos dio Henry, consiste en una SPA de videojuegos tipo fandom donde podremos ver diferentes videojuegos caracteristicas de los juegos, como asi tambien podremos agregar juegos nuevos.',
+    description: 'Proyecto individual para Henry, consiste en una SPA de videojuegos tipo fandom donde podremos ver diferentes videojuegos, como asi tambien podremos agregar juegos nuevos.',
     stack: [FaReact, FaCss3Alt, SiRedux, SiAxios, SiPostgresql, FaNodeJs, SiExpress, FaNpm],
     link: '#',
     repo: 'https://github.com/GEdgardoFernandez/TicTacToe',

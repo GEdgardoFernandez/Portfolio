@@ -1,0 +1,16 @@
+.header {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+}

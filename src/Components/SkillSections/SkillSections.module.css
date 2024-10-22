@@ -1,0 +1,62 @@
+.skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+    }
+    
+.skillBar {
+    background-color: #f53d3d;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0; 
+    width: 50%;/* Añade margen para separación entre barras */
+  }
+  
+  .skillLevel {
+    height: 25px;
+    background-color: #4caf50;
+    width: 0; /* Comienza con 0 para animación */
+    transition: width 1s ease-in-out;
+  }
+  
+  .skillLevel[data-skill='html'] {
+    width: 90%;
+  }
+  
+  .skillLevel[data-skill='css'] {
+    width: 85%;
+  }
+  
+  .skillLevel[data-skill='javascript'] {
+    width: 80%;
+  }
+  
+  .skillLevel[data-skill='react'] {
+    width: 80%;
+  }
+  
+  .skillLevel[data-skill='node'] {
+    width: 70%;
+  }
+  
+  .skillLevel[data-skill='postgresql'] {
+    width: 60%;
+  }
+  
+  .skillLevel[data-skill='typescript'] {
+    width: 40%;
+  }
+  
+  /* Opcional: estilos adicionales */
+  .skillBar span {
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold; 
+  }

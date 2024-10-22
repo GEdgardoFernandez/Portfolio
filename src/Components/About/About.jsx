@@ -4,25 +4,28 @@ import { useNavigate } from "react-router-dom";
 import Courses from "../Courses/Courses";
 
 const About = () => {
-    const [activeModal, setActiveModal] = useState(null);
-    const closeModal = () => setActiveModal(null);
-    const navigate = useNavigate();
-    const [isOn, setIsOn] = useState(false);
-    const handleClick = () => setIsOn(!isOn);
-    const fullText = "Soy un Desarrollador Full Stack con una sólida formación autodidacta y continua. Poseo un profundo conocimiento en diagnóstico y solución de problemas técnicos en software y hardware, así como una comprensión detallada de sistemas operativos, aplicaciones, drivers, componentes de hardware y configuraciones de red. Inicié mi carrera en programación con el curso de Responsive Web Design en FreeCodeCamp, adquiriendo conocimientos en HTML, CSS y JavaScript. Luego, participé en el curso de Primeros Pasos en el Desarrollo Frontend de Argentina Programa 4.0, donde reforcé y mejoré mis habilidades. Posteriormente, completé el curso de Programador Full Stack en los proyectos T. Tec. San Juan, profundizando en Java, Spring y SQL, y desarrollando habilidades blandas clave como la comunicación efectiva y el trabajo en equipo. Actualmente, estoy graduado del curso Full Stack Developer en Henry, donde adquirí nuevos leguajes y herramientas para mejorar mi stack (React, Node.js, PostgreSQL, Axios, Express, Boostrap NPM, Redux, etc), y fortaleciendo habilidades blandas como paciencia, puntualidad, organización, trabajo en equipo, resolución de problemas, etc. Mis habilidades blandas me permiten colaborar en proyectos de alto rendimiento y compartir conocimientos de manera efectiva. Estoy altamente motivado y emocionado por la industria de software. Mi objetivo a largo plazo es contribuir al desarrollo de software en empresas de prestigio global. Mi constante deseo de aprender y mejorar mis habilidades me mantiene al día con las últimas tendencias y tecnologías en el mundo del desarrollo web y software."
-    return (
-        <div className={styles.container}>
-            <div className={styles.about}>
-                <span className={styles.title}>Sobre mi</span>
-                <input type="checkbox" className={styles.check} onClick={handleClick}/>
-                <p className={`${styles.text} ${isOn ? styles.encendido : styles.tenue}`}>{fullText}</p>
-            </div>
-            <div className={styles.containerButtons}>
-                <button onClick={() => setActiveModal('courses')} className={styles.button}>Certificados</button>
-                <Courses show={activeModal === 'courses'} onClose={closeModal} />
-            </div>
-        </div>
-    );
-};
+        return (
+          <div className={styles.about}>
+            <h2 className={styles.title}>Sobre mí</h2>
+            <p>¡Hola! Soy [tu nombre], un desarrollador Front-End apasionado por crear experiencias web únicas y funcionales. Desde que descubrí mi amor por el código, he estado dedicado a perfeccionar mis habilidades y aprender nuevas tecnologías.</p>
+            
+            <h3 className={styles.subtitle}>Experiencia</h3>
+            <ul>
+              <li>HTML & CSS: Para construir estructuras sólidas y estilos atractivos.</li>
+              <li>JavaScript: Para agregar interactividad y dinamismo a las páginas.</li>
+              <li>React: Mi biblioteca favorita para crear interfaces de usuario modernas y eficientes.</li>
+            </ul>
+            
+            <h3 className={styles.subtitle}>Filosofía</h3>
+            <p>Creo firmemente en el poder del diseño centrado en el usuario. Cada proyecto que emprendo, lo hago con el objetivo de mejorar la experiencia del usuario final, asegurándome de que cada detalle está perfectamente pulido.</p>
+            
+            <h3 className={styles.subtitle}>Pasatiempos</h3>
+            <p>Cuando no estoy escribiendo código, me encanta [tu hobby] y [tu hobby]. Creo que estas actividades no solo me relajan, sino que también inspiran mi creatividad y me ayudan a pensar de manera innovadora.</p>
+            
+            <h3 className={styles.subtitle}>Contacto</h3>
+            <p>Estoy siempre abierto a nuevas oportunidades y colaboraciones. No dudes en ponerte en contacto conmigo a través de [tu correo electrónico] o [tu enlace a LinkedIn].</p>
+          </div>
+        );
+      };
 
 export default About;

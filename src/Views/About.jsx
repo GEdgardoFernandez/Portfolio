@@ -1,12 +1,12 @@
 import About from "../Components/About/About";
-import Menu from "../Components/Menu/Menu";
+import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 const AboutView = () => {
 
     return (
         <div>
             <div>
-                <Menu />
+                <Header />
             </div>
             <About />
             <div>

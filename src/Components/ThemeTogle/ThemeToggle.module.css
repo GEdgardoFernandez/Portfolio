@@ -1,0 +1,26 @@
+:root {
+    --bg-color-light: #f0f0f0;
+    --text-color-light: #333;
+    --bg-color-dark: #333;
+    --text-color-dark: #f0f0f0;
+  }
+  
+  .homelight .toggleButton {
+    border-color: #000000;
+  }
+  
+  .home .toggleButton {
+    border-color: #ffffff;
+  }
+  
+  .toggleButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }

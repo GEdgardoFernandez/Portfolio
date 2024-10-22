@@ -1,33 +1,19 @@
-import style from "./Menu.module.css";
-import { useState } from "react";
+import { useState } from 'react';
+import styles from './Menu.module.css';
 
-import { GrContact, GrHome, GrCli, GrUser  } from "react-icons/gr";
+const Sidebar = () => {
+  const [open, setOpen] = useState(false);
 
-
-import { useNavigate } from "react-router-dom";
-const Menu = () => {
-    const navigate = useNavigate();
-
-    return (
-        <div className={style.container}>
-            <div>
-                <ul className={style.wrapper}>
-                    <li className={`${style.icon} ${style.black}`} onClick={() => navigate('/home')}>
-                        <span className={style.tooltip}>Home</span>
-                        <span><GrHome size={30} /></span>
-                    </li>
-                    <li className={`${style.icon} ${style.black}`} onClick={() => navigate('/projects')}>
-                        <span className={style.tooltip}>Proyectos</span>
-                        <span><GrCli size={30} /></span>
-                    </li>
-                    <li className={`${style.icon} ${style.black}`} onClick={() => navigate('/contact')}>
-                        <span className={style.tooltip}>Contactame</span>
-                        <span><GrContact size={30} /></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <button onClick={() => setOpen(!open)} className={styles.button}>☰</button>
+      <div className={`${styles.sidebar} ${open ? styles.sidebarOpen : ''}`}>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="mailto:gecozzi87@gmail.com">Contact</a>
+      </div>
+    </div>
+  );
 };
 
-export default Menu;
+export default Sidebar;
