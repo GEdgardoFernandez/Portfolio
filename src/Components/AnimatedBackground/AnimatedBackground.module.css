@@ -1,0 +1,34 @@
+.movingGradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1c3d23, #516020, #184a43, #003ba0);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    z-index: -1; /* Ensure it stays behind other elements */
+  }
+  .movingGradientLight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #70ff8f, #d3fc4c, #50f8e1, #075ef5);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    z-index: -1; /* Ensure it stays behind other elements */
+  }
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

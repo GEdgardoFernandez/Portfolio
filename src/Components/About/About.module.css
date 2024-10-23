@@ -26,21 +26,3 @@ p, ul {
   line-height: 1.6;
   margin-bottom: 20px;
 }
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-  position: relative;
-}
-
-ul li::before {
-  content: '✔';
-  color: #4caf50;
-  position: absolute;
-  left: -20px;
-  top: 0;
-}

@@ -61,3 +61,20 @@
   font-size: 0.9em;
   transition: background-color 0.3s ease;
 }
+.projectButton {
+  background-color: #6a6a6a;
+  color: #fff;
+  padding: 0.3em 0.75em;
+  border-radius: 20px;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.projectButton:hover {
+  background-color: #cabcfa;
+  color: #424242;
+  padding: 0.3em 0.75em;
+  border-radius: 20px;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}

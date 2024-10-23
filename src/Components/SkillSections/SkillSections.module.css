@@ -1,57 +1,67 @@
-.skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1em;
-        padding: 1em;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 100%;
-    }
-    
 .skillBar {
-    background-color: #f53d3d;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 10px 0; 
-    width: 50%;/* Añade margen para separación entre barras */
+  background-color: #e0e0df;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px 0;
+  position: relative;
+  height: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de nivel de habilidad */
+.skillLevel {
+  height: 100%;
+  border-radius: 12px;
+  background-color: #4caf50;
+  width: 0; /* Comienza con 0 para animación */
+  transition: width 1.5s ease-in-out;
+}
+
+/* Título de la habilidad */
+.skillTitle {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Niveles de habilidad individuales */
+.skillLevel[data-skill='html'] {
+  width: 90%;
+}
+
+.skillLevel[data-skill='css'] {
+  width: 80%;
+}
+
+.skillLevel[data-skill='javascript'] {
+  width: 70%;
+}
+
+.skillLevel[data-skill='react'] {
+  width: 80%;
+}
+
+/* Efecto de transición en hover */
+.skillBar:hover .skillLevel {
+  filter: brightness(1.1);
+}
+
+/* Efecto de transición al cargar la página */
+@keyframes expand {
+  from {
+    width: 0;
   }
-  
-  .skillLevel {
-    height: 25px;
-    background-color: #4caf50;
-    width: 0; /* Comienza con 0 para animación */
-    transition: width 1s ease-in-out;
+  to {
+    width: var(--skill-width);
   }
-  
-  .skillLevel[data-skill='html'] {
-    width: 90%;
-  }
-  
-  .skillLevel[data-skill='css'] {
-    width: 85%;
-  }
-  
-  .skillLevel[data-skill='javascript'] {
-    width: 80%;
-  }
-  
-  .skillLevel[data-skill='react'] {
-    width: 80%;
-  }
-  
-  .skillLevel[data-skill='node'] {
-    width: 70%;
-  }
-  
-  .skillLevel[data-skill='postgresql'] {
-    width: 60%;
-  }
-  
-  .skillLevel[data-skill='typescript'] {
-    width: 40%;
-  }
+}
+
+.skillLevel {
+  animation: expand 1.5s forwards;
+}
   
   /* Opcional: estilos adicionales */
   .skillBar span {
@@ -60,3 +70,45 @@
     margin-left: 10px;
     font-weight: bold; 
   }
+
+  /* Estilos generales para los h2 */
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff416c;
+  text-align: center;
+  width: 100%;
+}
+
+/* Efecto de sombra para un aspecto más profesional */
+.title::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #ff4b2b;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Opcional: Pequeño efecto de desvanecimiento */
+.title {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

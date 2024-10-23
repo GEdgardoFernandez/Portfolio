@@ -7,12 +7,13 @@ import ThemeToggle from '../Components/ThemeTogle/ThemeTogle';
 import ScrollAnimation from '../Components/ScrollAnimation/ScrollAnimation';
 import Footer from '../Components/Footer/Footer';
 import styles from './Home.module.css'; // Si tienes estilos globales
-import ParticleBackground from '../Components/Particules/ParticuleBackground';
+import WaveBackground from '../Components/WaveBackground/WaveBackground';
+import AnimatedBackground from '../Components/AnimatedBackground/AnimatedBackground';
 
 const Home = () => {
   return (
     <div className={styles.home}>
-      <ParticleBackground  />
+      <AnimatedBackground  />
      
       {/* Header con barra de navegación */}
       
