@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf830582.css",
+    "main.js": "/static/js/main.afc353c8.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/certificado06.png": "/static/media/certificado06.e22175897737c9b22ce2.png",
+    "static/media/tictactoe.png": "/static/media/tictactoe.3250adfdd990bd395a09.png",
+    "static/media/rickandmorty2.png": "/static/media/rickandmorty2.30000a67a0d5c8e1a1a2.png",
+    "static/media/appgame2.png": "/static/media/appgame2.50a2c0e8a1cc0835be3c.png",
+    "static/media/ahorcado.png": "/static/media/ahorcado.1f3127e5cb074c95db8e.png",
+    "static/media/rickandmorty3.png": "/static/media/rickandmorty3.f229d57cafe3f75dcee3.png",
+    "static/media/ahorcado2.png": "/static/media/ahorcado2.4b6c796cb6e29408bf5d.png",
+    "static/media/tictactoe2.png": "/static/media/tictactoe2.42951dcab1880d01aa27.png",
+    "static/media/lunch1.png": "/static/media/lunch1.00f39803831632227f42.png",
+    "static/media/certificado04.jpg": "/static/media/certificado04.b185bea46715b7dd9945.jpg",
+    "static/media/certificado05.jpg": "/static/media/certificado05.c440a15d7f26c74df0ba.jpg",
+    "static/media/certificado03.png": "/static/media/certificado03.6f2368b17b9d92a0a667.png",
+    "static/media/appgame1.png": "/static/media/appgame1.1a201fcbcd331839ee27.png",
+    "static/media/lunch2.png": "/static/media/lunch2.3335a38b40e95ba22bd4.png",
+    "static/media/certificado01.jpg": "/static/media/certificado01.46ef8175e96acb540d54.jpg",
+    "static/media/Orbitron.ttf": "/static/media/Orbitron.7228a1c750b75b23bdb4.ttf",
+    "static/media/certificado02.jpg": "/static/media/certificado02.42c5595ae2c9d8a20378.jpg",
+    "static/media/C.png": "/static/media/C.64140916d9c177b60102.png",
+    "index.html": "/index.html",
+    "main.cf830582.css.map": "/static/css/main.cf830582.css.map",
+    "main.afc353c8.js.map": "/static/js/main.afc353c8.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf830582.css",
+    "static/js/main.afc353c8.js"
+  ]
+}
