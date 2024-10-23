@@ -7,15 +7,19 @@ import ThemeToggle from '../Components/ThemeTogle/ThemeTogle';
 import ScrollAnimation from '../Components/ScrollAnimation/ScrollAnimation';
 import Footer from '../Components/Footer/Footer';
 import styles from './Home.module.css'; // Si tienes estilos globales
+import ParticleBackground from '../Components/Particules/ParticuleBackground';
 
 const Home = () => {
   return (
     <div className={styles.home}>
+      <ParticleBackground  />
+     
       {/* Header con barra de navegación */}
+      
       <Header />
 
       {/* Botón de toggle para cambiar entre tema claro/oscuro */}
-      <ThemeToggle />
+      <ThemeToggle  />
 
       {/* Sección Hero */}
       <HeroSection />

@@ -6,7 +6,7 @@ flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #33333374;
+  background:none;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -31,7 +31,7 @@ flex-direction: column;
   cursor: pointer;
 }
 .button {
-  background-color: #ff4b2b;
+  background-color: #9c2bffbd;
   color: #fff;
   padding: 15px 30px;
   border: none;

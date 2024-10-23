@@ -3,7 +3,6 @@
   src: url('..//src/Assets/fonts/Orbitron.ttf');
 }
 .App, body {
-  background-color: #212121;
   background-size: cover;
   font-family: Orbitron;
   color : rgb(0, 0, 0);

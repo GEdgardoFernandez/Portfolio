@@ -27,8 +27,8 @@ const projects = [
     stack: [FaReact, FaCss3Alt, SiRedux, SiAxios, SiPostgresql, FaNodeJs, SiExpress, FaNpm],
     link: '#',
     repo: 'https://github.com/GEdgardoFernandez/TicTacToe',
-    img1: imgGame,
-    img2: imgGame2,
+    img1: imgGame2,
+    img2: imgGame,
   },
   {
     title: 'Wiki de Rick and Morty (PI-Henry)',

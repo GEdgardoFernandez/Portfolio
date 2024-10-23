@@ -12,12 +12,12 @@
     display: inline;
     letter-spacing: 1px;
     font-size: 16px;
-    color: rgba(154, 205, 50, 0.2);
+    color: rgb(153, 205, 50);
 
 }
 
 #copyright p:hover {
-    color: darkgreen;
+    color: rgb(6, 165, 6);
     font-weight: bold;
     font-size: 20px;
     transition: 0.7s;

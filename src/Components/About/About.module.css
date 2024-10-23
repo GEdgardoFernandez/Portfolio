@@ -1,7 +1,7 @@
 .about {
   padding: 40px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #f9f9f982;
+  color: #000000;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -10,7 +10,7 @@
 .title {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #ff416c;
+  color: #8e0222;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   font-size: 1.5em;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #2575fc;
+  color: #0042b2;
 }
 
 p, ul {

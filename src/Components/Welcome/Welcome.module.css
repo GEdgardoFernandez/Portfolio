@@ -1,0 +1,17 @@
+.welcome {
+    font-size: 3em;
+    color: #ff416c;
+    text-align: center;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .welcome {
+    animation: fade 2s infinite;
+  }
+  
+  @keyframes fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
