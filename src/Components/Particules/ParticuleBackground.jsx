@@ -5,12 +5,12 @@ const ParticleBackground = () => {
   useEffect(() => {
     const particleBackground = document.getElementById('particle-background');
     
-    // Vaciar el contenedor antes de añadir nuevas partículas (si es necesario)
+   
     while (particleBackground.firstChild) {
       particleBackground.removeChild(particleBackground.firstChild);
     }
     
-    // Crear partículas y añadirlas al contenedor
+
     const particles = Array.from({ length: 100 }, (_, i) => {
       const particle = document.createElement('div');
       particle.className = styles.particle;

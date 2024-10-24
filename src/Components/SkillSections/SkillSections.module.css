@@ -8,16 +8,15 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Barra de nivel de habilidad */
 .skillLevel {
   height: 100%;
   border-radius: 12px;
   background-color: #4caf50;
-  width: 0; /* Comienza con 0 para animación */
+  width: 0; 
   transition: width 1.5s ease-in-out;
 }
 
-/* Título de la habilidad */
+
 .skillTitle {
   position: absolute;
   top: 50%;
@@ -27,7 +26,6 @@
   color: #fff;
 }
 
-/* Niveles de habilidad individuales */
 .skillLevel[data-skill='html'] {
   width: 90%;
 }
@@ -44,12 +42,12 @@
   width: 80%;
 }
 
-/* Efecto de transición en hover */
+
 .skillBar:hover .skillLevel {
   filter: brightness(1.1);
 }
 
-/* Efecto de transición al cargar la página */
+
 @keyframes expand {
   from {
     width: 0;
@@ -63,7 +61,7 @@
   animation: expand 1.5s forwards;
 }
   
-  /* Opcional: estilos adicionales */
+
   .skillBar span {
     display: inline-block;
     color: #fff;
@@ -71,7 +69,7 @@
     font-weight: bold; 
   }
 
-  /* Estilos generales para los h2 */
+
 .title {
   font-size: 2.5em;
   font-weight: bold;
@@ -85,7 +83,7 @@
   width: 100%;
 }
 
-/* Efecto de sombra para un aspecto más profesional */
+
 .title::before {
   content: '';
   position: absolute;
@@ -97,7 +95,7 @@
   transform: translateX(-50%);
 }
 
-/* Opcional: Pequeño efecto de desvanecimiento */
+
 .title {
   animation: fadeIn 1s ease-in-out;
 }

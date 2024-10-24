@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../Menu/Menu'; // Sidebar con el menú lateral
+import Sidebar from '../Menu/Menu';
 import styles from './Header.module.css';
 
 const Header = () => {

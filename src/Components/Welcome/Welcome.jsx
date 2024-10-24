@@ -8,7 +8,7 @@ const Welcome = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
-    }, 4000); // Cambia de idioma cada 2 segundos
+    }, 4000); 
 
     return () => clearInterval(intervalId);
   }, []);

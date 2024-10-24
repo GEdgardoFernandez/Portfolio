@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, img1, stack, repo }) => {
             <IconComponent key={idx} className={styles.stackIcon} />
           ))}
         </div>
-        <button className={styles.projectButton} >Ver mas</button>
+        <button className={styles.projectButton} onClick={() => window.open(repo, '_blank')} >Ver mas</button>
       </div>
     </div>
   );

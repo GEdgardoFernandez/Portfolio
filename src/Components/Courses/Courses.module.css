@@ -1,9 +1,9 @@
 .container {
-    position: fixed; /* Fija el modal en la pantalla */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
-    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    width: 100vw;
+    height: 100vh; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.9);
     color: rgb(167, 255, 59);
-    z-index: 1000; /* Asegúrate de que el modal esté en frente */
+    z-index: 1000;
     padding: 20px;
     box-sizing: border-box;
     font-family: "Orbitron";

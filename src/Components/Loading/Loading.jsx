@@ -10,10 +10,10 @@ const Loading = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-            navigate('/home'); // Navega a Home después de 3 segundos
+            navigate('/home');
         }, 9000);
 
-        // Limpia el timer si el componente se desmonta antes de que el timer termine
+     
         return () => clearTimeout(timer);
     }, [navigate]);
 

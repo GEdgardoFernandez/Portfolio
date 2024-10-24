@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const typedText = typedTextRef.current;
-    const texts = ["Frontend Developer."]; // Puedes añadir más textos aquí si lo deseas
+    const texts = ["Frontend Developer."]; 
     let index = 0;
     let charIndex = 0;
     let currentText = '';
@@ -21,7 +21,7 @@ const HeroSection = () => {
         if (charIndex < 0) {
           isDeleting = false;
           index = (index + 1) % texts.length;
-          setTimeout(type, 500); // Pausa antes de escribir el siguiente texto
+          setTimeout(type, 500);
         } else {
           setTimeout(type, 100);
         }
@@ -29,7 +29,7 @@ const HeroSection = () => {
         typedText.textContent = currentText.substring(0, charIndex++);
         if (charIndex > currentText.length) {
           isDeleting = true;
-          setTimeout(type, 1500); // Pausa después de escribir el texto completo
+          setTimeout(type, 1500); 
         } else {
           setTimeout(type, 100);
         }
@@ -45,6 +45,7 @@ const HeroSection = () => {
     <section className={styles.hero}>
       <h2><Welcome /></h2>
       <p ref={typedTextRef} className={styles.typedText}></p>
+      <p></p>
     </section>
   );
 };

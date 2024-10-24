@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1; /* Asegura que el perfil esté por encima de los carteles */
+    z-index: 1;
 }
 .profile>h1 {
     color: #fff;
@@ -104,12 +104,12 @@
 
 .neonBackground {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ajusta el número de columnas según sea necesario */    /* Ajusta el número de filas según sea necesario */
-    gap: 20px; /* Espacio entre los carteles */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Para que los carteles queden detrás de la información de perfil */
+    z-index: 1; 
 }

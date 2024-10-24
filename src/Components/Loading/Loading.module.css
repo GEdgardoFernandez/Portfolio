@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #282c34; /* Fondo oscuro */
+    background-color: #282c34; 
 }
 
 .banner {
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #282c34; /* Fondo oscuro */
+    background-color: #282c34; 
 }
 
 @keyframes text3d {
@@ -40,7 +40,7 @@
     }
 }
 
-/* From Uiverse.io by dvhoang2106 */
+
 .spinner {
     display: inline-block;
     transform: translateZ(1px);
@@ -62,8 +62,8 @@
     height: 250px;
     margin: 8px;
     border-radius: 50%;
-    background: #f4ce28; /* Color del spinner */
-    animation: spinner8344 8s cubic-bezier(0.5, 0.2, 0.8, 1) infinite; /* Duración de la animación cambiada a 8s */
+    background: #f4ce28; 
+    animation: spinner8344 8s cubic-bezier(0.5, 0.2, 0.8, 1) infinite;
 }
 
 @keyframes spinner8344 {

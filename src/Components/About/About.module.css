@@ -1,28 +1,88 @@
 .about {
   padding: 40px;
-  background-color: #f9f9f982;
-  color: #000000;
+  background-color: #050505a9;
+  color: #c1bfbf;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
 }
 
 .title {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 20px;
-  color: #8e0222;
+  color: #ff416c;
   text-align: center;
 }
 
-.subtitle {
-  font-size: 1.5em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #0042b2;
+.content {
+  display: flex;
+  align-items: flex-start;
 }
 
-p, ul {
+.profilePic {
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
   font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.text a {
+  color: #ff416c;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
+.certificate {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.certificateTitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ff416c;
+}
+.certificateImage {
+  width: 400px;
+  height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.certificateImage:hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+.certificateInsti a {
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ff416c;
+}
+
+.certificateInsti a:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.2);
 }

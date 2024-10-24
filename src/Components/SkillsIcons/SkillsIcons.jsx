@@ -5,7 +5,7 @@ import styles from './SkillsIcons.module.css';
 
 const SkillsIcons = () => {
   return (
-    <div className={styles.skillsContainer}>
+    <div className={styles.skillsContainer} id='Skills'>
       <div className={styles.iconContainer}>
         <FaHtml5 className={styles.icon} />
         <span className={styles.tooltip}>HTML5</span>

@@ -14,7 +14,7 @@
     margin-top: 50px
   }
   
-  /* Estilos generales para los h2 */
+
 .title {
   font-size: 2.5em;
   font-weight: bold;
@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-/* Efecto de sombra para un aspecto más profesional */
+
 .title::before {
   content: '';
   position: absolute;
@@ -39,7 +39,7 @@
   transform: translateX(-50%);
 }
 
-/* Opcional: Pequeño efecto de desvanecimiento */
+
 .title {
   animation: fadeIn 1s ease-in-out;
 }
