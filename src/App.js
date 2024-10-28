@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route estrict path='/home' element={<Home />} />
+        <Route estrict path='/' element={<Home />} />
         <Route path='/about' element={<AboutView />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
