@@ -1,12 +1,16 @@
+.container {
+  position: relative;
+}
+
 .sidebar {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   height: 50%;
   width: 0;
   position: fixed;
   top: 0;
   right: 0;
-  background:none;
+  background: none;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -35,6 +39,7 @@ flex-direction: column;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
 .btn {
   position: right;
   width: 150px;
@@ -85,14 +90,76 @@ flex-direction: column;
 .btn:active .icon {
   transform: scale(0.85);
 }
+
 @media (max-width: 768px) {
   .nav-item {
-      padding: 10px;
-      display: block;
+    padding: 10px;
+    display: block;
   }
 
   .header {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50%;
+    height: 70%;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
+  .sidebarOpen {
+    width: 60%;
+    height: 50%;
+    display: flex;
+  }
+
+  .sidebar a {
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: 18px;
+  }
+
+  .btn .icon {
+    width: 50px;
+  }
+
+  .btn:hover .icon {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar a {
+    margin: 8px 0;
+    font-size: 0.7em;
+    background-color: rgba(255, 255, 255, 0.381);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 80px;
+    font-size: 16px;
+  }
+
+  .btn .icon {
+    width: 40px;
+  }
+
+  .btn:hover .icon {
+    width: 80px;
   }
 }

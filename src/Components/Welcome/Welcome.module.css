@@ -1,17 +1,39 @@
 .welcome {
-    font-size: 3em;
-    color: #ff416c;
-    text-align: center;
-    margin-top: 20px;
-    transition: opacity 0.5s ease-in-out;
+  font-size: 3em;
+  color: #ff416c;
+  text-align: center;
+  margin-top: 20px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.welcome {
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+
+  0%,
+  100% {
     opacity: 1;
   }
-  
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
   .welcome {
-    animation: fade 2s infinite;
+    font-size: 2.5em;
+    margin-top: 15px;
   }
-  
-  @keyframes fade {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+}
+
+@media (max-width: 480px) {
+  .welcome {
+    font-size: 2em;
+    margin-top: 10px;
   }
+}

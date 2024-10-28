@@ -22,6 +22,7 @@
   height: 200px;
   object-fit: cover;
 }
+
 .projectImage:active {
   scale: 2.5;
   z-index: 9999;
@@ -83,4 +84,44 @@
   border-radius: 20px;
   font-size: 0.9em;
   transition: background-color 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .projectCard {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectContent {
+    width: 100%;
+  }
+
+  .projectTitle {
+    font-size: 1.5em;
+  }
+
+  .projectDescription {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .projectCard {
+    padding: 0.5em;
+  }
+
+  .projectTitle {
+    font-size: 1.2em;
+  }
+
+  .projectDescription {
+    font-size: 0.8em;
+  }
 }

@@ -17,6 +17,7 @@
 .content {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .profilePic {
@@ -46,19 +47,21 @@
 .text a:hover {
   text-decoration: underline;
 }
+
 .certificate {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
+
 .certificateTitle {
   font-size: 1.5em;
   margin-bottom: 20px;
   color: #ff416c;
 }
+
 .certificateImage {
   width: 400px;
   height: 260px;
@@ -69,11 +72,13 @@
   object-fit: cover;
   margin-right: 20px;
 }
+
 .certificateImage:hover {
   transform: scale(1.4);
   transition: transform 0.5s ease;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
+
 .certificateInsti a {
   text-decoration: none;
   font-size: 1.2em;
@@ -85,4 +90,63 @@
   cursor: pointer;
   transition: 0.5s;
   transform: scale(1.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .about {
+    padding: 30px 10px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profilePic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  .certificateImage {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 20px 5px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .profilePic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text p {
+    font-size: 0.9em;
+  }
+
+  .certificateImage {
+    width: 200px;
+    height: 150px;
+  }
 }

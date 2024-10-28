@@ -1,25 +1,61 @@
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.8em;
+  margin-top: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
   }
-  
+
+  50% {
+    border-color: #ffffff;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
   .hero h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
     font-size: 1.8em;
-    margin-top: 0;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation: blink-caret 0.75s step-end infinite;
   }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #ffffff; }
+
+  .hero p {
+    font-size: 1.5em;
   }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+}
