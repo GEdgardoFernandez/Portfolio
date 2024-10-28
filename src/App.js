@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Landing />} />
         <Route estrict path='/home' element={<Home />} />
         <Route path='/about' element={<AboutView />} />
         <Route path='*' element={<NotFound />} />
