@@ -6,20 +6,31 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
 .modal {
   background: #060606b9;
   border-radius: 8px;
-  width: 90%;
-  max-width: 800px;
-  height: auto;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: auto;
 }
 
 .closeButton {
@@ -39,6 +50,7 @@
   transition: transform 0.3s ease;
 }
 
+
 .modalContent {
   display: flex;
   flex-direction: row;
@@ -49,9 +61,24 @@
 
 /* Responsividad */
 @media (max-width: 768px) {
+  .modalContent {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .carouselItem {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
   .modal {
     width: 95%;
-    padding: 15px;
   }
 
   .closeButton {
@@ -60,36 +87,9 @@
     right: 5px;
   }
 
-  .modalContent {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-
   .carouselItem {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-  }
-}
-
-@media (max-width: 480px) {
-  .modal {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .closeButton {
-    font-size: 1rem;
-    top: 5px;
-    right: 5px;
-  }
-
-  .modalContent {
-    padding: 10px;
+    flex: 0 0 90%;
+    scroll-snap-align: center;
+    margin-right: 5px;
   }
 }

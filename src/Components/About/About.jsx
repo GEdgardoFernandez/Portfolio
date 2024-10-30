@@ -22,7 +22,7 @@ const About = () => {
 
           <p><strong>Filosofía:</strong> Creo firmemente en el poder del diseño centrado en el usuario. Cada proyecto que emprendo, lo hago con el objetivo de mejorar la experiencia del usuario final, asegurándome de que cada detalle está perfectamente pulido.</p>
 
-          <p><strong>Pasatiempos:</strong> Cuando no estoy escribiendo código, me encanta jugar videojuegos, leer, y pasar tiempo con familia y amigos. Creo que estas actividades no solo me relajan, sino que también inspiran mi creatividad y me ayudan a pensar de manera innovadora.</p>
+          <p><strong>Pasatiempos:</strong> Cuando no estoy escribiendo código, me encanta jugar videojuegos, leer, pasar tiempo con familia y amigos. Creo que estas actividades no solo me relajan, sino que también inspiran mi creatividad y me ayudan a pensar de manera innovadora.</p>
 
           <p><strong>Contacto:</strong> Estoy siempre abierto a nuevas oportunidades y colaboraciones. No dudes en ponerte en contacto conmigo a través de <a href="mailto:gecozzi87@gmail.com"><span>mi correo</span></a> o <a href="https://www.linkedin.com/in/guillermo-fern%C3%A1ndez-703b50267/" target="_blank"><span>mi LinkedIn</span></a>.</p>
 
